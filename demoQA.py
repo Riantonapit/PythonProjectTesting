@@ -6,8 +6,9 @@ import tempfile
 import time
 
 options = Options()
-user_data_diri = tempfile.mkdtemp()
-options.add_argument(f' --user-data-dir={user_data_diri}')
+options.add_argument("--headless")  # mode tanpa UI
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
 
 options = webdriver.ChromeOptions()
 
