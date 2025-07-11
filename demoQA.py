@@ -6,7 +6,7 @@ import tempfile
 import time
 
 options = Options()
-user_data_dir = tempfile.mkdtemp()
+user_data_diri = tempfile.mkdtemp()
 options.add_argument(f' --user-data-dir={user_data_diri}')
 
 options = webdriver.ChromeOptions()
